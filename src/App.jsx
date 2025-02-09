@@ -22,7 +22,7 @@ function App() {
           count is {count}
         </button>
         <p>
-          Demo project for kuberntees
+          Demo project for kuberntees  for practice
         </p>
       </div>
       <p className="read-the-docs">
