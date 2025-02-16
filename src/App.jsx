@@ -22,7 +22,11 @@ function App() {
           count is {count}
         </button>
         <p>
+<<<<<<< HEAD
           Demo project for kuberntees  for practice
+=======
+          Edit <code>src/App.jsx</code> and save to test HMR
+>>>>>>> db50b89 (added)
         </p>
       </div>
       <p className="read-the-docs">
