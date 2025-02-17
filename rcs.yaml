@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: my-rcset   # ✅ Lowercase name
+  labels:
+    app: my-app
+    type: frontend
+
+spec:
+  replicas: 6   # ✅ Moved replicas above template for clarity
+  selector:
+    matchLabels:
+      app: nginx   # ✅ Must exactly match template.metadata.labels
+      tier: frontend
+
+  template:
+    metadata:
+      labels:  # ✅ Removed `name: nginx` (not needed)
+        app: nginx
+        tier: frontend
+
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
