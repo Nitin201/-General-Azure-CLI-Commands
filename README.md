@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-=======
+======
 >>>>>>> db50b89 (added)
 # React + Vite
 
